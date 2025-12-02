@@ -1,4 +1,5 @@
-
+function loadingAnimation() {
+    
 var tl = gsap.timeline();
 tl.from(".line h1",{
     y:150,
@@ -39,5 +40,30 @@ tl.from("#page1",{
     ease:Power4,
 })
 tl.to("#loader",{
-    display:none,
+    display:"none",
 })
+tl.from(".hero h1, #hero3 h2",{
+    y:150,
+    stagger:0.2,
+     
+})
+}
+loadingAnimation();
+
+function cursorAnimation(){
+    document.addEventListener("mousemove", function (e) {
+    gsap.to("#csr", {
+        left: e.clientX,
+        top: e.clientY,
+        
+        
+    });
+});
+
+Shery.makeMagnet("#nav-part2 h4" /* Element to target.*/, {
+  //Parameters are optional.
+});
+
+}
+
+cursorAnimation();
