@@ -18,6 +18,9 @@ html, body{
     height: 100%;
     width: 100%;
 }
+body{
+    overflow-x: hidden;
+}
 #csr {
     height: 2.3vw;
     width: 2.3vw;
@@ -110,7 +113,7 @@ html, body{
 /* #0B0B0B */
 #main{
     position: relative;
-    background: #030303;
+    background: #292828;
 }
 #page1{
     height: 100vh;
@@ -154,14 +157,132 @@ html, body{
     text-transform: uppercase;
 
 }
-.hero h2 {
+#hero5 h2 {
     font-weight: 600;
-    font-size: 7vw;
+    font-size: 13vh;
     text-transform: uppercase;
+    border-bottom: 0.7vw solid white;
+    padding-bottom: 0.5vw;
+    transition: all ease 0.3s;
 
 }
-.hero h2:hover{
+#hero5 h2:hover{
     -webkit-text-stroke: 2px white;
     color: transparent;
     font-weight: 500;
+    border-bottom: 0.7vw solid transparent;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 16vh;
+    background: #151515 ;
+}
+#video-cont{
+    height: 70vh;
+    width: 70vw;
+    position: relative;
+    left: 30%;
+    /* background-image: url(&quot;https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg&quot;); */
+
+}
+#video-cont img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+}
+#video-cont video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-cursur{
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #FFA63D;
+    top: -13%;
+    left: 60%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background: aqua;
+    position: relative;
+}
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    background: aqua;
+    position: relative;
+}
+#page4-cont{
+    width: 72vw;
+    position: relative;
+    margin-left: 28%;
+}
+#page4-cont h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+#page4-cont .underline{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin: 5vw 0;
+}
+#page4-cont>p{
+    font-size: 2vw;
+    width: 45%;
+    font-weight: 600;
+    margin-bottom: 4vw;
+}
+#page4-flex{
+    display: flex;
+}
+#page4-flex img{
+    width: 48%;
+}
+#page4-flex p{
+    font-size: 1vw;
+    font-weight: 500;
+    width: 20%;
+    margin-left: 2vw;
+}
+#page4-blue{
+    background-color: #3F7DF4 ;
+    width: 45%;
+    padding: 4vw 2vw;
+    position: relative;
+    margin-top: -30vh;
+    margin-left: 24vw;
+}
+.blue-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2vw 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.447);
+}
+.blue-elem h4{
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+.blue-elem p{
+    width: 50%;
+
+}
+#page5 {
+    min-height: 100vh;
+    width: 100%;
+
 }
